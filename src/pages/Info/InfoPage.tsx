@@ -5,6 +5,7 @@ import { profile } from '@/data/profile'
 import { useRef } from 'react'
 import styles from './InfoPage.module.scss'
 import ReactMarkdown from 'react-markdown'
+import profileImage from '@/assets/images/profile/profile-000.jpg'
 
 const InfoPage = () => {
   const imageRef = useRef<HTMLDivElement>(null)
@@ -20,7 +21,7 @@ const InfoPage = () => {
         left={<p>{profile.location}</p>}
         center={
           <div ref={imageRef} className={styles.imageWrap}>
-            <img src="src/assets/images/profile/profile-000.jpg" alt="Sutee Vapeetam" loading="lazy"
+            <img src={profileImage} alt="Sutee Vapeetam" loading="lazy"
               draggable={false}
               onContextMenu={(event) => event.preventDefault()} />
           </div>
