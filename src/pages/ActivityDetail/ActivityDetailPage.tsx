@@ -7,6 +7,7 @@ import ReadMore from '@/components/common/ReadMore/ReadMore'
 import { activities } from '@/data/activities'
 
 import styles from './ActivityDetailPage.module.scss'
+import GalleryImage from '@/components/common/GalleryImage/GalleryImage'
 
 const ActivityDetailPage = () => {
   const { slug } = useParams()
@@ -128,14 +129,10 @@ const ActivityDetailPage = () => {
 
                       <div className={styles.gallery}>
                         {images.map((image, index) => (
-                          <img
+                          <GalleryImage
                             key={`${activity.slug}-image-${index}`}
                             src={image}
                             alt={`${activity.title} ${index + 1}`}
-                            className={styles.galleryImage}
-                            loading="lazy"
-                            draggable={false}
-                            onContextMenu={(event) => event.preventDefault()}
                           />
                         ))}
                       </div>
