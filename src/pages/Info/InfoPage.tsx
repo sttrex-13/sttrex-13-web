@@ -20,7 +20,7 @@ const InfoPage = () => {
         left={<p>{profile.location}</p>}
         center={
           <div ref={imageRef} className={styles.imageWrap}>
-            <img src="/images/profile-000.jpg" alt="Sutee Vapeetam" loading="lazy"
+            <img src="src/assets/images/profile/profile-000.jpg" alt="Sutee Vapeetam" loading="lazy"
               draggable={false}
               onContextMenu={(event) => event.preventDefault()} />
           </div>
