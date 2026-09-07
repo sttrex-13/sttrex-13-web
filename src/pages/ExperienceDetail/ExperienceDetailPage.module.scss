@@ -1,0 +1,44 @@
+.muted {
+  color: var(--muted);
+  margin-top: 7px;
+}
+
+.copy {
+  max-width: 590px;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.detailSection {
+  margin-bottom: 28px;
+}
+
+.detailSection h3 {
+  font-size: inherit;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.markdown {
+  p {
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    line-height: 1.55;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,20 @@
+.header {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(280px, 0.85fr) minmax(320px, 1.4fr);
+  column-gap: clamp(28px, 4vw, 72px);
+  font-size: var(--text-sm);
+  line-height: 1.2;
+}
+
+.name, .info { width: fit-content; text-decoration: none; color: var(--ink); }
+.info { grid-column: 2; }
+
+@media (max-width: 900px) {
+  .header { grid-template-columns: 190px 1fr; }
+  .info { grid-column: 2; }
+}
+
+@media (max-width: 640px) {
+  .header { display: flex; justify-content: space-between; }
+  .info { grid-column: auto; }
+}

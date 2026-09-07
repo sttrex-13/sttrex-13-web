@@ -1,0 +1,18 @@
+.layout {
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 28px 32px 24px;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  padding-top: clamp(64px, 9vh, 118px);
+  min-width: 0;
+}
+
+@media (max-width: 720px) {
+  .layout { padding: 20px 18px 18px; }
+  .main { padding-top: 52px; }
+}

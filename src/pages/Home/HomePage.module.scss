@@ -1,0 +1,84 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.locationWrapper {
+  display: inline-block;
+}
+
+.locationButton {
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+  background: transparent;
+
+  color: inherit;
+  font: inherit;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 4px;
+  }
+}
+
+.locationImage {
+  position: fixed;
+
+  top: 0;
+
+  width: clamp(
+    130px,
+    14vw,
+    220px
+  );
+
+  height: auto;
+
+  z-index: 100;
+
+  pointer-events: none;
+  user-select: none;
+
+  object-fit: contain;
+
+  transform-origin: center;
+
+  will-change:
+    transform,
+    opacity;
+}
+
+@media (max-width: 768px) {
+  .locationImage {
+    width: clamp(
+      100px,
+      36vw,
+      180px
+    );
+  }
+}

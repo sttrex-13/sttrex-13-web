@@ -1,0 +1,19 @@
+@use './reset';
+@use './variables';
+@use './typography';
+
+html { background: var(--paper); color: var(--ink); }
+body { min-width: 320px; min-height: 100vh; }
+* { box-sizing: border-box; }
+p, h1, h2, h3 { margin: 0; }
+a { color: inherit; }
+::selection { background: #151515; color: #fff; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

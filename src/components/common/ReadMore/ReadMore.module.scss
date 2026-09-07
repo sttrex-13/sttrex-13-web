@@ -1,0 +1,12 @@
+.wrap { margin-top: 18px; }
+.button {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.button:hover { opacity: .55; }
+.content { will-change: height, opacity; }
+.inner { padding-top: 24px; }

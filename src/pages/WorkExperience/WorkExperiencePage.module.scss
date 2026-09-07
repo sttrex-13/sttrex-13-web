@@ -1,0 +1,5 @@
+.fullWidthContent { grid-column: 1 / -1; width: calc(100% + 52vw); max-width: 900px; }
+.fullWidthContent h2 { font-size: var(--text-sm); font-weight: 400; margin-bottom: 24px; }
+.rows { display: grid; gap: 2px; }
+.freelance { margin-top: 48px; }
+@media (max-width: 900px) { .fullWidthContent { width: 100%; max-width: none; } }
