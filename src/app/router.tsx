@@ -8,17 +8,20 @@ import ActivitiesPage from '@/pages/Activities/ActivitiesPage'
 import ActivityDetailPage from '@/pages/ActivityDetail/ActivityDetailPage'
 import ProjectsPage from '@/pages/Projects/ProjectsPage'
 
-export const router = createBrowserRouter([
-  {
-    element: <SiteLayout />,
-    children: [
-      { path: '/', element: <HomePage /> },
-      { path: '/info', element: <InfoPage /> },
-      { path: '/experience', element: <WorkExperiencePage /> },
-      { path: '/experience/:slug', element: <ExperienceDetailPage /> },
-      { path: '/activities', element: <ActivitiesPage /> },
-      { path: '/activities/:slug', element: <ActivityDetailPage /> },
-      { path: '/projects', element: <ProjectsPage /> },
-    ],
-  },
-])
+export const router = createBrowserRouter(
+  [
+    {
+      element: <SiteLayout />,
+      children: [
+        { path: '/', element: <HomePage /> },
+        { path: '/info', element: <InfoPage /> },
+        { path: '/experience', element: <WorkExperiencePage /> },
+        { path: '/experience/:slug', element: <ExperienceDetailPage /> },
+        { path: '/activities', element: <ActivitiesPage /> },
+        { path: '/activities/:slug', element: <ActivityDetailPage /> },
+        { path: '/projects', element: <ProjectsPage /> },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL },
+)
