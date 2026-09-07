@@ -410,9 +410,12 @@ const HomePage = () => {
               >
                 {profile.phone}
               </a>
-              <a href="#resume">
-                View Resume
-              </a>
+              <TextLink
+                external
+                to="https://drive.google.com/file/d/1F9OfV5PPbx01GQhBoQaBc48QS0wtEWzU/view?usp=sharing"
+              >
+                View My CV
+              </TextLink>
             </div>
 
           </div>
