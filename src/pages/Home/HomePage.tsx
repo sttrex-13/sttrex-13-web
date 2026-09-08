@@ -412,7 +412,7 @@ const HomePage = () => {
               </a>
               <TextLink
                 external
-                to="https://drive.google.com/file/d/1F9OfV5PPbx01GQhBoQaBc48QS0wtEWzU/view?usp=sharing"
+                to="https://drive.google.com/file/d/1N-GwOHKw1sq36xRuNDVWjDa9V89HN2W2/view?usp=sharing"
               >
                 View My CV
               </TextLink>
